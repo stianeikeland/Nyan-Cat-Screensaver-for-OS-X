@@ -46,7 +46,7 @@
                     // set the current frame
                     [bitmapRep setProperty:NSImageCurrentFrame withValue:[NSNumber numberWithInt:i]];
                     CGImageRef img = [bitmapRep CGImage];
-                    [gifFrames addObject:(id)img];
+                    [gifFrames addObject:(__bridge id)img];
                 }
                 
                 // stops at the first valid representation
